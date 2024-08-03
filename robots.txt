@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /blog/archives/*
+Disallow: /blog/categories/*
+Disallow: /blog/tags/*
+Disallow: /blog/comment/*
+Disallow: /blog/links/*
+Disallow: /blog/girls/*
+Allow: /
+
+
+Sitemap: https://illusionlie.github.io/blog/sitemap.xml
