@@ -28,12 +28,12 @@ var bg_img_preinstall = {
 
 // 更改背景图片
 function setBgImgInit() {
-    var bg_img = getBgImg();
+    let bg_img = getBgImg();
     $("input[name='wallpaper-type'][value=" + bg_img["type"] + "]").click();
 
     switch (bg_img["type"]) {
         case "1":
-            var pictures = new Array();
+            const pictures = new Array();
             pictures[0] = './img/background1.webp';
             pictures[1] = './img/background2.webp';
             pictures[2] = './img/background3.webp';
@@ -42,7 +42,10 @@ function setBgImgInit() {
             pictures[5] = './img/background6.webp';
             pictures[6] = './img/background7.webp';
             pictures[7] = './img/background8.webp';
-            var rd = Math.floor(Math.random() * 8);
+            pictures[8] = './img/background9.webp';
+            pictures[9] = './img/background10.webp';
+            pictures[10] = './img/background11.webp';
+            let rd = Math.floor(Math.random() * 11);
             $('#bg').attr('src', pictures[rd]) //随机默认壁纸
             break;
         case "2":
@@ -77,7 +80,10 @@ $(document).ready(function () {
             pictures[5] = './img/background6.webp';
             pictures[6] = './img/background7.webp';
             pictures[7] = './img/background8.webp';
-            var rd = Math.floor(Math.random() * 8);
+            pictures[8] = './img/background9.webp';
+            pictures[9] = './img/background10.webp';
+            pictures[10] = './img/background11.webp';
+            let rd = Math.floor(Math.random() * 11);
             $('#bg').attr('src', pictures[rd]) //随机默认壁纸
             iziToast.show({
                 message: '壁纸设置成功',
