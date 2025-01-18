@@ -260,8 +260,8 @@ footer a:hover {
     <div class="bottom">
       <p>Boo, looks like a ghost stole this page!</p>
       <div class="buttons">
-        <button class="btn">Back</button>
-        <a href="./index.html"><button class="btn">Home</button></a>
+        <a href="javascript:void(0)" onclick="goBack();"><button class="btn">Back</button></a>
+        <a href="javascript:void(0)" onclick="goHome();"><button class="btn">Home</button></a>
       </div>
     </div>
     
@@ -270,3 +270,12 @@ footer a:hover {
     </footer>
 </body>
 </html>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  function goHome() {
+    window.location.href = `${window.location.origin}/`;
+  }
+</script>
