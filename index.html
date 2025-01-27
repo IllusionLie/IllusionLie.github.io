@@ -434,6 +434,7 @@
     <script type="text/javascript" src="./js/js.cookie.js"></script>
     <script type="text/javascript" src="./js/set.js"></script>
     <script type="text/javascript" src="./js/cursor.js"></script>
+    <script type="text/javascript" src="./js/GalMenu.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js">
     </script>
     <script>
@@ -442,6 +443,35 @@
                 window.location.href = "https://illusionlie.com/";
             }
         }
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        galMenu('body', {
+        menu:"galRing",
+        click_to_close:true,
+        stay_open:false,
+        audio_play:true,
+        audio_url:"./audio.mp3",
+        ring1_text:"主页",
+        ring1_link:"https://illusionlie.com",
+        ring1_pic:"https://cdn.illusionlie.com/img/girls/ayane_thumb.webp",
+        ring2_text:"博客",
+        ring2_link:"https://blog.illusionlie.com/",
+        ring2_pic:"https://cdn.illusionlie.com/img/girls/neri_thumb.webp",
+        ring3_text:"重定向",
+        ring3_link:"https://redirect.illusionlie.com/",
+        ring3_pic:"https://cdn.illusionlie.com/img/girls/yurugi_thumb.webp",
+        ring4_text:"暂无",
+        ring4_link:"#",
+        ring4_pic:"https://cdn.illusionlie.com/img/girls/ren_thumb.webp",
+        ring5_text:"暂无",
+        ring5_link:"#",
+        ring5_pic:"https://cdn.illusionlie.com/img/girls/kaguya_thumb.webp",
+        ring6_text:"该项目",
+        ring6_link:"https://github.com/illusionlie/key_style_right_click_menu",
+        ring6_pic:"https://cdn.illusionlie.com/img/girls/chieri_thumb.webp"
+        });
+    })
     </script>
 </body>
 
