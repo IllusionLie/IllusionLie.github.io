@@ -445,7 +445,10 @@
         }
     </script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
+        let counter = 0;
+        const maxCounter = 10;
+        document.addEventListener('DOMContentLoaded', function(initgalMenu) {
+            if (typeof galMenu !== 'function') {if (counter > maxCounter) {return;} else {counter++;setTimeout(initgalMenu, 1000);}}
         galMenu('body', {
         menu:"galRing",
         click_to_close:true,
